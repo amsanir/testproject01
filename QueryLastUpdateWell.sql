@@ -1,0 +1,1 @@
+select a.uniqueName as PlatformName, a.id,b.platformId,b.latitude,b.longitude,b.createdAt,b.updatedAt from Platform as a left join WellDto as b on a.id=b.platformId order by b.updatedAt ;
